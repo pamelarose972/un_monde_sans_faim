@@ -48,8 +48,6 @@ a {
 
 img {
 	max-width: 100%;
-	width: auto;
-	height: auto;
 }
 
 ul {
@@ -103,7 +101,7 @@ header {
 
 
 /**********************************************
-                      MAIN
+                      MAIN - HOMEPAGE
 ***********************************************/
 
 article {
@@ -141,6 +139,49 @@ section {
 }
 
 /**********************************************
+                      MAIN - EVENTS PAGE
+***********************************************/
+.card {
+  border: 1px solid #E2C499;
+  border-radius: 12px;
+  margin: 2rem;
+}
+
+.card-top {
+  border-radius:  12px 12px 0 0;
+  width: 100%;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+button {
+  color: white;
+  background-color: var(--secondaryColor);
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 10px
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: end;
+  margin: 0 1rem 1rem 0;
+}
+
+
+/**********************************************
                     FOOTER
 ***********************************************/
 footer {
@@ -158,7 +199,7 @@ footer {
 }
 
 /***********************************************
-              TABLET RESPONSIVE
+                1ST BREAKPOINT
 ************************************************/
 
 @media screen and (min-width: 768px) {
@@ -169,10 +210,20 @@ footer {
   article p {
     padding: 1rem 10rem;
   }
+
+  #container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 40%;
+  }
 }
 
 /***********************************************
-              DESKTOP RESPONSIVE
+            2ND BREAKPOINT
 ************************************************/
 
 @media screen and (min-width: 990px) {
@@ -209,5 +260,15 @@ footer {
   .menu article,
   .quote p {
     width: 30%;
-  } 
+  }  
 }
+
+/***********************************************
+            3RD BREAKPOINT
+************************************************/
+@media screen and (min-width: 1199px) {
+  .card {
+    max-width: 20%;
+  }
+}
+  
